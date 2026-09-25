@@ -21,21 +21,15 @@ nor does lightning travel in a straight line.
 
 For every point $c$ of the complex plane, iterate
 
-```math
-z_{n+1} = z_n^{2} + c, \qquad z_0 = 0
-```
+$$z_{n+1} = z_n^{2} + c \qquad z_0 = 0$$
 
 The Mandelbrot set is the set of all $c$ for which the orbit stays bounded:
 
-```math
-\mathcal{M} = \left\{\, c \in \mathbb{C} \;:\; \sup_{n \ge 0} |z_n| < \infty \,\right\}
-```
+$$\mathcal{M} = \lbrace c \in \mathbb{C} \mid \sup_{n \ge 0} \lvert z_n \rvert < \infty \rbrace$$
 
-Once $|z_n| > 2$ the orbit escapes to infinity, so $c \notin \mathcal{M}$. The colour of each outside point comes from the smooth escape time
+Once $\lvert z_n \rvert > 2$ the orbit escapes to infinity, so $c \notin \mathcal{M}$. The colour of each outside point comes from the smooth escape time
 
-```math
-\nu = n + 1 - \log_2 \log |z_n|
-```
+$$\nu = n + 1 - \log_2 \log \lvert z_n \rvert$$
 
 which removes the visible bands of a plain iteration count. The boundary of $\mathcal{M}$ is so wrinkled that its Hausdorff dimension is exactly $2$ (Shishikura, 1998).
 
