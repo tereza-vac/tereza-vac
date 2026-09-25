@@ -13,7 +13,7 @@ nor does lightning travel in a straight line.
 
 <img src="assets/mandelbrot.png" width="720" alt="The Mandelbrot set rendered by a recursive SQL query">
 
-<p><sub>The Mandelbrot set, computed by a single recursive SQL query &mdash; every pixel and every iteration is a row.</sub></p>
+<p><sub>The Mandelbrot set, computed by a single recursive SQL query. Every pixel and every iteration is a row.</sub></p>
 
 <details>
 <summary><b>The math</b></summary>
@@ -45,7 +45,7 @@ It builds the pixel grid, then keeps squaring every <code>z</code> in lock-step 
 <a href="mandelbrot/render.py"><code>render.py</code></a> only maps the returned escape times to colours.
 </p>
 <p>
-1920 × 1080 points, 200 iterations, 2×2 supersampling &mdash; about three minutes on a laptop.
+1920 × 1080 points, 200 iterations, 2×2 supersampling, about three minutes on a laptop.
 </p>
 
 </details>
